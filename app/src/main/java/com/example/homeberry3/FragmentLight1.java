@@ -79,7 +79,4 @@ public class FragmentLight1 extends Fragment {
         }
     }
 
-
-
-
 }
