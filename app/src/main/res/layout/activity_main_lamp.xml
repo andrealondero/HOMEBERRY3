@@ -8,78 +8,55 @@
     android:background="@color/colorPrimaryDark"
     tools:context=".MainLampActivity">
 
-    <ImageView
-        android:id="@+id/pianta"
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:src="@drawable/pianta"
-        />
-
-    <ImageButton
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:onClick="ToLamp1"
-        android:padding="10dp"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="25dp"
-        android:scaleX="0.8"
-        android:scaleY="0.8"
-        android:background="@color/colorPrimaryDark"
-        android:src="@drawable/icon_lamp" />
-
-    <ImageButton
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:onClick="ToLamp2"
-        android:padding="10dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="100dp"
-        android:scaleX="0.8"
-        android:scaleY="0.8"
-        android:background="@color/colorPrimaryDark"
-        android:src="@drawable/icon_lamp" />
-
-    <ImageButton
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="135dp"
-        android:background="@color/colorPrimaryDark"
-        android:clickable="true"
-        android:onClick="ToLamp3"
-        android:padding="10dp"
-        android:scaleX="0.8"
-        android:scaleY="0.8"
-        android:src="@drawable/icon_lamp" />
-
-    <ImageButton
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="80dp"
-        android:background="@color/colorPrimaryDark"
-        android:clickable="true"
-        android:onClick="ToLamp4"
-        android:padding="10dp"
-        android:scaleX="0.8"
-        android:scaleY="0.8"
-        android:src="@drawable/icon_lamp" />
-
-    <FrameLayout
-        android:id="@+id/fragment_container"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/pianta"
-        android:layout_above="@id/navigation">
-    </FrameLayout>
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50">
+
+        <ImageView
+            android:id="@+id/pianta"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/pianta"
+            />
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="ToLamp1"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/icon_lamp" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50">
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp">
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"

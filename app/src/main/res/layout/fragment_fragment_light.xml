@@ -19,14 +19,14 @@
         android:text="ALL LIGHTS"
         android:textColor="#FFFFFF" />
 
-    <Switch
+    <ImageButton
         android:id="@+id/switch1"
-        style="@style/SwitchLampStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/entrance"
+        android:layout_marginStart="50dp"
         android:padding="15dp"
         android:layout_centerVertical="true"
-        android:theme="@style/SwitchLampTheme" />
+        android:background="@drawable/switch_thumb_lamp"/>
 
 </RelativeLayout>
