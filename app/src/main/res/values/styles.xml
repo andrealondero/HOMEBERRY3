@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="SwitchLampTheme">
+        <item name="colorControlActivated">#FFC61E</item>
+    </style>
+    <style name="SwitchLampStyle">
+        <item name="android:thumb">@drawable/switch_thumb_lamp</item>
+        <item name="trackTint">@color/switch_color_lamp</item>
+    </style>
+
+
+    <style name="SwitchDoorTheme">
+        <item name="colorControlActivated">#1EB53A</item>
+    </style>
+    <style name="SwitchDoorStyle">
+        <item name="android:thumb">@drawable/switch_thumb_door</item>
+        <item name="trackTint">@color/switch_color_door</item>
+    </style>
+
+
+    <style name="SwitchWindowTheme">
+        <item name="colorControlActivated">#3A75C4</item>
+    </style>
+    <style name="SwitchWindowStyle">
+        <item name="android:thumb">@drawable/switch_thumb_window</item>
+        <item name="trackTint">@color/switch_color_window</item>
+    </style>
+
+
+    <style name="SwitchFanTheme">
+        <item name="colorControlActivated">#ADAFAA</item>
+    </style>
+    <style name="SwitchFanStyle">
+        <item name="android:thumb">@drawable/switch_thumb_fan</item>
+        <item name="trackTint">@color/switch_color_fan</item>
+    </style>
+
+
+
+</resources>

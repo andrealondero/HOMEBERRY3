@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.homeberry3">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/homeberry"
+        android:label="HOMEBERRY"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainFanActivity"></activity>
+        <activity android:name=".MainWindowActivity" />
+        <activity android:name=".MainDoorActivity" />
+        <activity android:name=".MainLampActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

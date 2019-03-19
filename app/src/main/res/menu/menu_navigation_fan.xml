@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/luci"
+        android:icon="@drawable/switch_plan"
+        android:title="Plan" />
+
+    <item
+        android:id="@+id/luci1"
+        android:icon="@drawable/switch_lamp"
+        android:title="Lights" />
+
+    <item
+        android:id="@+id/luci2"
+        android:icon="@drawable/switch_door"
+        android:title="Doors" />
+
+    <item
+        android:id="@+id/luci3"
+        android:icon="@drawable/switch_window"
+        android:title="Windows" />
+
+</menu>

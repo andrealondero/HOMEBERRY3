@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".FragmentFan1">
+
+    <TextView
+        android:id="@+id/entrance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAIN FAN"
+        android:textColor="#FFFFFF"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="15dp"
+        android:layout_centerVertical="true"
+        />
+
+    <Switch
+        android:id="@+id/switch1"
+        style="@style/SwitchFanStyle"
+        android:theme="@style/SwitchFanTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="15dp"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

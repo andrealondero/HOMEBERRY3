@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/porte"
+        android:icon="@drawable/switch_plan"
+        android:title="Plan" />
+
+    <item
+        android:id="@+id/porte1"
+        android:icon="@drawable/switch_lamp"
+        android:title="Lights" />
+
+    <item
+        android:id="@+id/porte2"
+        android:icon="@drawable/switch_window"
+        android:title="Windows" />
+
+    <item
+        android:id="@+id/porte3"
+        android:icon="@drawable/switch_fan"
+        android:title="Fans" />
+
+</menu>
