@@ -19,8 +19,8 @@
         android:text="ENTRANCE LIGHTS"
         android:textColor="#FFFFFF" />
 
-    <Switch
-        android:id="@+id/switch1"
+    <ImageButton
+        android:id="@+id/btnMainTer"
         style="@style/SwitchLampStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
