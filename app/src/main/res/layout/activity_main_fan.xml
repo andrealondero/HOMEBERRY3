@@ -8,41 +8,60 @@
     android:background="@color/colorPrimaryDark"
     tools:context=".MainFanActivity">
 
-    <ImageView
-        android:id="@+id/pianta"
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:src="@drawable/pianta"
-        />
-
-    <ImageButton
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:onClick="ToFan1"
-        android:padding="10dp"
-        android:layout_marginStart="230dp"
-        android:layout_marginTop="80dp"
-        android:scaleX="0.8"
-        android:scaleY="0.8"
-        android:background="@color/colorPrimaryDark"
-        android:src="@drawable/icon_fan" />
-
-    <FrameLayout
-        android:id="@+id/fragment_container"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/pianta"
-        android:layout_above="@id/navigation">
-    </FrameLayout>
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50">
+
+            <ImageView
+                android:id="@+id/pianta"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/pianta"
+                />
+
+            <ImageButton
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="ToFan"
+                android:layout_marginTop="80dp"
+                android:layout_centerHorizontal="true"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:background="@color/colorPrimaryDark"
+                android:src="@drawable/icon_fan" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50">
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp">
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
 
     <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
+        android:id="@+id/navigation_fan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
         android:background="@color/colorPrimary"
         app:itemTextColor="#FFFFFF"
         app:itemIconSize="30dp"

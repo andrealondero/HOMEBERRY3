@@ -5,28 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".FragmentLight">
+    tools:context=".LIGHTS.FragmentLight">
 
     <TextView
         android:id="@+id/entrance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="15dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
+        android:paddingStart="10dp"
+        android:textSize="20dp"
         android:gravity="center"
         android:layout_centerVertical="true"
-        android:text="ALL LIGHTS"
+        android:text="ENTRANCE LIGHTS"
         android:textColor="#FFFFFF" />
 
     <ImageButton
-        android:id="@+id/switch1"
+        android:id="@+id/btnEntrance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/entrance"
         android:layout_marginStart="50dp"
-        android:padding="15dp"
         android:layout_centerVertical="true"
-        android:background="@drawable/switch_thumb_lamp"/>
+        android:clickable="true"
+        android:scaleY="0.8"
+        android:scaleX="0.8"
+        android:background="@drawable/lampbutton"/>
 
 </RelativeLayout>

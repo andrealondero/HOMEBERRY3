@@ -1,11 +1,10 @@
 package com.example.homeberry3;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -32,18 +31,22 @@ public class MainWindowActivity extends AppCompatActivity {
                         case R.id.luci:
                             Intent intent = new Intent( MainWindowActivity.this, MainWindowActivity.class );
                             startActivity( intent );
+                            finish();
                             break;
                         case R.id.luci1:
                             Intent intent1 = new Intent( MainWindowActivity.this, MainLampActivity.class );
                             startActivity( intent1 );
+                            finish();
                             break;
                         case R.id.luci2:
                             Intent intent2 = new Intent( MainWindowActivity.this, MainDoorActivity.class );
                             startActivity( intent2 );
+                            finish();
                             break;
                         case R.id.luci3:
                             Intent intent3 = new Intent( MainWindowActivity.this, MainFanActivity.class );
                             startActivity( intent3 );
+                            finish();
                             break;
                     }
 

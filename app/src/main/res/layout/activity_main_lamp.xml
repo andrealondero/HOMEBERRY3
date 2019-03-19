@@ -22,7 +22,7 @@
         <ImageView
             android:id="@+id/pianta"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="300dp"
             android:src="@drawable/pianta"
             />
 
@@ -32,11 +32,49 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:onClick="ToLamp1"
-            android:padding="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="80dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/icon_lamp" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="ToLamp2"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="130dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/icon_lamp" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="ToLamp3"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="270dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/icon_lamp" />
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="ToLamp4"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            android:scaleX="0.8"
-            android:scaleY="0.8"
+            android:layout_marginTop="170dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
             android:background="@color/colorPrimaryDark"
             android:src="@drawable/icon_lamp" />
 
