@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingStart="10dp"
-        android:textSize="20dp"
+        android:textSize="16dp"
         android:gravity="center"
         android:layout_centerVertical="true"
         android:text="ENTRANCE LIGHTS"
@@ -26,8 +26,8 @@
         android:layout_marginStart="50dp"
         android:layout_centerVertical="true"
         android:clickable="true"
-        android:scaleY="0.8"
-        android:scaleX="0.8"
+        android:scaleY="0.5"
+        android:scaleX="0.5"
         android:background="@drawable/lampbutton"/>
 
 </RelativeLayout>
