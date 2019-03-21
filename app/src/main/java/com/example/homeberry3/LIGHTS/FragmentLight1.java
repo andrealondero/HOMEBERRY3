@@ -36,6 +36,7 @@ public class FragmentLight1 extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         view = inflater.inflate( R.layout.fragment_fragment_light1, container, false);
 
+
         PeripheralManager pioService = PeripheralManager.getInstance();
         try {
             Log.i(TAG, "Configuring GPIO pins");
@@ -44,6 +45,11 @@ public class FragmentLight1 extends Fragment {
         } catch (IOException e) {
             Log.e(TAG, "Error configuring GPIO pins", e);
         }
+       /* try {
+            state = mLedGpio.getValue();
+        }catch (IOException e){
+            Log.e(TAG, "Valore non trovato", e);
+        }*/
         hallLightOne = view.findViewById(R.id.btnHallOne);
 
         hallLightOne.setOnClickListener(new View.OnClickListener() {
@@ -51,7 +57,7 @@ public class FragmentLight1 extends Fragment {
             public void onClick(View v) {
 
                if(state == false) {
-                   state = true;
+                  state = true;
                    setLedValue(true);
                }
                else {
