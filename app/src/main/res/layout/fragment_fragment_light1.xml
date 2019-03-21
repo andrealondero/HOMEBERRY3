@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:paddingStart="10dp"
-        android:textSize="12dp"
+        android:textSize="10dp"
         android:gravity="center"
         android:layout_centerVertical="true"
         android:text="HALL LIGHT ONE"
@@ -41,7 +41,7 @@
         android:layout_height="match_parent"
         android:clickable="true"
         android:scaleX="0.7"
-        android:scaleY="0.15"
+        android:scaleY="0.2"
         android:background="@drawable/lampbutton"/>
 
         </RelativeLayout>

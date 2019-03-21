@@ -61,7 +61,7 @@
             android:clickable="true"
             android:onClick="ToLamp3"
             android:layout_marginTop="55dp"
-            android:layout_marginStart="220dp"
+            android:layout_marginStart="200dp"
             android:scaleX="0.5"
             android:scaleY="0.5"
             android:background="@color/colorPrimaryDark"
