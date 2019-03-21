@@ -38,12 +38,12 @@ public class FragmentLight extends Fragment {
         PeripheralManager pioService = PeripheralManager.getInstance();
         try {
             Log.i(TAG, "Configuring GPIO pins");
-            mLedGpio = pioService.openGpio( BoardDefaults.LED_RED);
+            mLedGpio = pioService.openGpio( BoardDefaults.LED_VERDE);
             mLedGpio.setDirection(Gpio.DIRECTION_OUT_INITIALLY_LOW);
         } catch (IOException e) {
             Log.e(TAG, "Error configuring GPIO pins", e);
         }
-        entranceLight = view.findViewById(R.id.btnEntrance);
+        entranceLight = view.findViewById(R.id.btnHallTwo);
 
         entranceLight.setOnClickListener(new View.OnClickListener() {
             @Override
