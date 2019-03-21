@@ -4,21 +4,31 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
+import com.example.homeberry3.BoardDefaults;
+import com.example.homeberry3.MainActivity;
 import com.example.homeberry3.R;
+import com.google.android.things.contrib.driver.button.Button;
+import com.google.android.things.pio.Gpio;
+import com.google.android.things.pio.PeripheralManager;
+
+import java.io.IOException;
+
+import static com.example.homeberry3.BoardDefaults.MOTOR_PIN;
 
 public class FragmentFan extends Fragment {
 
     View view;
     ImageButton fanBtn;
 
-//    private static final String TAG = MainActivity.class.getSimpleName();
-//    private Gpio mLedGpio;
-//    boolean state = false;
+    private static final String TAG = MainActivity.class.getSimpleName();
+      private Gpio myMotorGpio;
+      boolean state = false;
 
     public FragmentFan() {
     }
@@ -28,14 +38,16 @@ public class FragmentFan extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         view = inflater.inflate( R.layout.fragment_fragment_fan, container, false);
 
-    /*        PeripheralManager pioService = PeripheralManager.getInstance();
+        PeripheralManager pioService = PeripheralManager.getInstance();
+
         try {
-            Log.i(TAG, "Configuring GPIO pins");
-            mLedGpio = pioService.openGpio( BoardDefaults.LED_RED);
-            mLedGpio.setDirection(Gpio.DIRECTION_OUT_INITIALLY_LOW);
-        } catch (IOException e) {
-            Log.e(TAG, "Error configuring GPIO pins", e);
-        } */
+                Log.i(TAG, "Configuring GPIO pins");
+            myMotorGpio = pioService.openGpio(BoardDefaults.MOTOR_PIN);
+            myMotorGpio.setDirection(Gpio.DIRECTION_OUT_INITIALLY_LOW);
+            } catch (IOException e) {
+                Log.e(TAG, "Error configuring GPIO pins", e);
+            }
+
 
         fanBtn = view.findViewById(R.id.btnFan);
 
@@ -43,25 +55,25 @@ public class FragmentFan extends Fragment {
             @Override
             public void onClick(View v) {
 
-/*               if(state == false) {
+               if(state == false) {
                    state = true;
-                   setLedValue(true);
+                   setMotorValue(true);
                }
                else {
                    state = false;
-                   setLedValue(false);
-               } */
+                   setMotorValue(false);
+               }
             }
         });
 
         return view;
     }
-/*    private void setLedValue(boolean value) {
+    private void setMotorValue(boolean value) {
         try {
-            mLedGpio.setValue(value);
+            myMotorGpio.setValue(value);
         } catch (IOException e) {
             Log.e(TAG, "Error updating GPIO value", e);
         }
-    } */
+    }
 
 }

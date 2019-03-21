@@ -10,8 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
+import com.example.homeberry3.BoardDefaults;
+import com.example.homeberry3.MainActivity;
 import com.example.homeberry3.R;
 import com.google.android.things.pio.Gpio;
+import com.google.android.things.pio.PeripheralManager;
 
 import java.io.IOException;
 
@@ -20,98 +23,51 @@ public class FragmentLight extends Fragment {
     View view;
     ImageButton entranceLight;
 
-//    private static final String TAG = MainActivity.class.getSimpleName();
-//    private Gpio mLedGpio;
-//    boolean state = false;
-
-    //public static final String PIR_PIN = "BCM17"; //physical pin #11
-    //public static final String LED_PIN = "BCM13"; //physical pin #33
-
-    private Gpio mPirGpio;
-    private Gpio mLed2Gpio;
+    private static final String TAG = MainActivity.class.getSimpleName();
+    private Gpio mLedGpio;
+    boolean state = false;
 
     public FragmentLight() {
     }
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate( R.layout.fragment_fragment_light, container, false);
+        view = inflater.inflate( R.layout.fragment_fragment_light2, container, false);
 
-/*        PeripheralManager pioService = PeripheralManager.getInstance();
+        PeripheralManager pioService = PeripheralManager.getInstance();
         try {
             Log.i(TAG, "Configuring GPIO pins");
-        // set PIR sensor as button for LED
-            // Create GPIO connection.
-            mPirGpio = service.openGpio(PIR_PIN);
-            // Configure as an input.
-            mPirGpio.setDirection(Gpio.DIRECTION_IN);
-            // Enable edge trigger events for both falling and rising edges. This will make it a toggle button.
-            mPirGpio.setEdgeTriggerType(Gpio.EDGE_BOTH);
-            // Register an event callback.
-            mPirGpio.registerGpioCallback(mSetLEDCallback);
-
-            // set LED as output
-            // Create GPIO connection.
-            mLed2Gpio = service.openGpio(LED_PIN);
-            // Configure as an output.
-            mLed2Gpio.setDirection(Gpio.DIRECTION_OUT_INITIALLY_LOW);
-
-
-
-            mLedGpio = pioService.openGpio( BoardDefaults.LED_RED);
+            mLedGpio = pioService.openGpio(BoardDefaults.LED_GIALLO);
             mLedGpio.setDirection(Gpio.DIRECTION_OUT_INITIALLY_LOW);
         } catch (IOException e) {
             Log.e(TAG, "Error configuring GPIO pins", e);
-        } */
+        }
 
-   /*     if(!getPirState())
-            setLedValue2(false);
-        else setLedValue2(true);*/
-
-        entranceLight = view.findViewById(R.id.btnEntrance);
+        entranceLight = view.findViewById(R.id.btnHallTwo);
 
         entranceLight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-/*               if(state == false) {
-                   state = true;
-                   setLedValue(true);
-               }
-               else {
-                   state = false;
-                   setLedValue(false);
-               } */
+                if(state == false) {
+                    state = true;
+                    setLedValue(true);
+                }
+                else {
+                    state = false;
+                    setLedValue(false);
+                }
             }
         });
 
         return view;
     }
-/*
-    private boolean getPirState(){
-        try {
-            return mPirGpio.getValue();
-        } catch (IOException e){
-            Log.e(TAG, "Error getting GPIO value", e);
-        }
-        return false;
-    }
-
-    private void setLedValue2(boolean value) {
+    private void setLedValue(boolean value) {
         try {
             mLedGpio.setValue(value);
         } catch (IOException e) {
             Log.e(TAG, "Error updating GPIO value", e);
         }
     }
-/*    private void setLedValue(boolean value) {
-        try {
-            mLedGpio.setValue(value);
-        } catch (IOException e) {
-            Log.e(TAG, "Error updating GPIO value", e);
-        }
-    } */
-
 }
