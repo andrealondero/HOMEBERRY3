@@ -38,7 +38,7 @@ public class FragmentLight3 extends Fragment {
         PeripheralManager pioService = PeripheralManager.getInstance();
         try {
             Log.i(TAG, "Configuring GPIO pins");
-            mLedGpio = pioService.openGpio(BoardDefaults.LED_VERDE);
+            mLedGpio = pioService.openGpio(BoardDefaults.LED_GIALLO);
             mLedGpio.setDirection(Gpio.DIRECTION_OUT_INITIALLY_LOW);
         } catch (IOException e) {
             Log.e(TAG, "Error configuring GPIO pins", e);
