@@ -42,7 +42,7 @@ public class FragmentLight3 extends Fragment {
             mLedGpio.setDirection(Gpio.DIRECTION_OUT_INITIALLY_LOW);
         } catch (IOException e) {
             Log.e(TAG, "Error configuring GPIO pins", e);
-        }
+        } 
 
         mainTerraceLight = view.findViewById(R.id.btnMainTer);
 
