@@ -7,27 +7,53 @@
     android:background="@color/colorPrimaryDark"
     tools:context=".LIGHTS.FragmentLight">
 
-    <TextView
-        android:id="@+id/entrance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingStart="10dp"
-        android:textSize="16dp"
-        android:gravity="center"
-        android:layout_centerVertical="true"
-        android:text="ENTRANCE LIGHTS"
-        android:textColor="#FFFFFF" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <ImageButton
-        android:id="@+id/btnEntrance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/entrance"
-        android:layout_marginStart="50dp"
-        android:layout_centerVertical="true"
-        android:clickable="true"
-        android:scaleY="0.5"
-        android:scaleX="0.5"
-        android:background="@drawable/lampbutton"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/entrance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="ENTRANCE LIGHTS"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <ImageButton
+                android:id="@+id/btnEntrance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:scaleY="0.18"
+                android:background="@drawable/lampbutton"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
 
 </RelativeLayout>

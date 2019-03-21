@@ -9,14 +9,15 @@
     tools:context=".MainLampActivity">
 
     <LinearLayout
+        android:id="@+id/colonne"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="100">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="200dp"
         android:layout_weight="50">
 
         <ImageView
@@ -83,13 +84,13 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="200dp"
             android:layout_weight="50">
 
             <FrameLayout
                 android:id="@+id/fragment_container"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="200dp"
                 android:layout_marginTop="0dp">
             </FrameLayout>
 
@@ -101,8 +102,7 @@
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
+        android:layout_below="@id/colonne"
         android:background="@color/colorPrimary"
         app:itemTextColor="#FFFFFF"
         app:itemIconSize="15dp"
