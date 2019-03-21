@@ -6,11 +6,47 @@
     android:background="@color/colorPrimaryDark">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/collaborators"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:textSize="12dp"
-        android:text="ALE SUCA"
-        android:textColor="#FFFFFF"/>
+        android:fontFamily="@font/archivo_narrow"
+        android:text="Cassinari Alessandro, Londero Andrea, Manessi Claudia,   Negri Matteo, Pettenella Luca "
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/collaborators"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="REALISED BY"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_below="@id/collaborators"
+        android:layout_centerHorizontal="true"
+        android:text="COLLABORATORS"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_below="@id/title2"
+        android:layout_centerHorizontal="true"
+        android:text="Antonio Lezzi"
+        android:textSize="16dp"
+        android:textColor="#FFFFFF"
+        />
 
 </RelativeLayout>

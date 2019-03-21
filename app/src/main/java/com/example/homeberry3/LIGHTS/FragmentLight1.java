@@ -70,5 +70,4 @@ public class FragmentLight1 extends Fragment {
             Log.e(TAG, "Error updating GPIO value", e);
         }
     }
-
 }
