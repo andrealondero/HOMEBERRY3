@@ -33,18 +33,17 @@ public class FragmentLight extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate( R.layout.fragment_fragment_light2, container, false);
+        view = inflater.inflate( R.layout.fragment_fragment_light1, container, false);
 
         PeripheralManager pioService = PeripheralManager.getInstance();
         try {
             Log.i(TAG, "Configuring GPIO pins");
-            mLedGpio = pioService.openGpio(BoardDefaults.LED_GIALLO);
+            mLedGpio = pioService.openGpio( BoardDefaults.LED_RED);
             mLedGpio.setDirection(Gpio.DIRECTION_OUT_INITIALLY_LOW);
         } catch (IOException e) {
             Log.e(TAG, "Error configuring GPIO pins", e);
         }
-
-        entranceLight = view.findViewById(R.id.btnHallTwo);
+        entranceLight = view.findViewById(R.id.btnEntrance);
 
         entranceLight.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,4 +69,5 @@ public class FragmentLight extends Fragment {
             Log.e(TAG, "Error updating GPIO value", e);
         }
     }
+
 }
