@@ -22,8 +22,6 @@ public class MainLampActivity extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
-//        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-//                new FragmentLight()).commit();
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
@@ -54,9 +52,7 @@ public class MainLampActivity extends AppCompatActivity {
                             startActivity( intent3 );
                             finish();
                             break;
-
                     }
-
                     return false;
                 };
             };
