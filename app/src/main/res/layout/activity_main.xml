@@ -6,62 +6,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
+    android:gravity="center"
     tools:context=".MainActivity">
 
-    <RelativeLayout
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:columnCount="2"
         android:padding="15dp"
-        android:layout_centerInParent="true">
+        android:rowCount="2">
 
         <ImageButton
             android:id="@+id/lamp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/lamp_button"
             android:background="#000000"
-            android:padding="20dp"
             android:clickable="true"
             android:onClick="ToLamp"
-            />
+            android:padding="30dp"
+            android:src="@drawable/lamp_button" />
 
         <ImageButton
             android:id="@+id/door"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/door_button"
-            android:background="#000000"
             android:layout_toRightOf="@id/lamp"
-            android:padding="20dp"
+            android:background="#000000"
             android:clickable="true"
             android:onClick="ToDoor"
-            />
+            android:padding="30dp"
+            android:src="@drawable/door_button" />
 
         <ImageButton
             android:id="@+id/window"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/window_button"
-            android:background="#000000"
             android:layout_below="@id/lamp"
-            android:padding="20dp"
+            android:background="#000000"
             android:clickable="true"
             android:onClick="ToWindow"
-            />
+            android:padding="30dp"
+            android:src="@drawable/window_button" />
 
         <ImageButton
             android:id="@+id/fan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/fan_button"
-            android:background="#000000"
-            android:layout_toRightOf="@id/window"
             android:layout_below="@id/door"
-            android:padding="20dp"
+            android:layout_toRightOf="@id/window"
+            android:background="#000000"
             android:clickable="true"
             android:onClick="ToFan"
-            />
+            android:padding="30dp"
+            android:src="@drawable/fan_button" />
 
-    </RelativeLayout>
+    </GridLayout>
 
 </RelativeLayout>

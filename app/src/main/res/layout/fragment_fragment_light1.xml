@@ -7,27 +7,45 @@
     android:background="@color/colorPrimaryDark"
     tools:context=".LIGHTS.FragmentLight1">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
     <TextView
         android:id="@+id/entrance"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:paddingStart="10dp"
-        android:textSize="16dp"
+        android:textSize="12dp"
         android:gravity="center"
         android:layout_centerVertical="true"
         android:text="HALL LIGHT ONE"
         android:textColor="#FFFFFF" />
 
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
     <ImageButton
         android:id="@+id/btnHallOne"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/entrance"
-        android:layout_marginStart="50dp"
-        android:layout_centerVertical="true"
+        android:layout_height="match_parent"
         android:clickable="true"
-        android:scaleY="0.5"
-        android:scaleX="0.5"
+        android:scaleX="0.7"
+        android:scaleY="0.15"
         android:background="@drawable/lampbutton"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>

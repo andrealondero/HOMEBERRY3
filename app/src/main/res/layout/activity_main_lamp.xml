@@ -35,7 +35,7 @@
             android:clickable="true"
             android:onClick="ToLamp1"
             android:layout_marginTop="40dp"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="30dp"
             android:scaleX="0.5"
             android:scaleY="0.5"
             android:background="@color/colorPrimaryDark"
@@ -48,7 +48,7 @@
             android:clickable="true"
             android:onClick="ToLamp2"
             android:layout_marginTop="70dp"
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="70dp"
             android:scaleX="0.5"
             android:scaleY="0.5"
             android:background="@color/colorPrimaryDark"
@@ -61,7 +61,7 @@
             android:clickable="true"
             android:onClick="ToLamp3"
             android:layout_marginTop="55dp"
-            android:layout_marginStart="270dp"
+            android:layout_marginStart="220dp"
             android:scaleX="0.5"
             android:scaleY="0.5"
             android:background="@color/colorPrimaryDark"
@@ -90,8 +90,7 @@
             <FrameLayout
                 android:id="@+id/fragment_container"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="0dp">
+                android:layout_height="200dp">
             </FrameLayout>
 
         </RelativeLayout>
