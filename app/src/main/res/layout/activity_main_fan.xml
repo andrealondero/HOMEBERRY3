@@ -9,20 +9,22 @@
     tools:context=".MainFanActivity">
 
     <LinearLayout
+        android:id="@+id/colonne"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="100">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="200dp"
             android:layout_weight="50">
 
             <ImageView
                 android:id="@+id/pianta"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
                 android:src="@drawable/pianta"
                 />
 
@@ -43,7 +45,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="200dp"
             android:layout_weight="50">
 
             <FrameLayout
@@ -60,11 +62,11 @@
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation_fan"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_height="40dp"
+        android:layout_below="@id/colonne"
         android:background="@color/colorPrimary"
         app:itemTextColor="#FFFFFF"
-        app:itemIconSize="30dp"
+        app:itemIconSize="15dp"
         app:itemIconTint="@android:color/tab_indicator_text"
         app:menu="@menu/menu_navigation_fan" />
 

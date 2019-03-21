@@ -12,11 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainFanActivity"></activity>
-        <activity android:name=".MainWindowActivity" />
-        <activity android:name=".MainDoorActivity" />
-        <activity android:name=".MainLampActivity" />
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".MainFanActivity"
+            android:theme="@style/Theme.Design.NoActionBar">
+        </activity>
+        <activity android:name=".MainWindowActivity"
+            android:theme="@style/Theme.Design.NoActionBar">
+        </activity>
+        <activity android:name=".MainDoorActivity"
+            android:theme="@style/Theme.Design.NoActionBar">
+        </activity>
+        <activity android:name=".MainLampActivity"
+            android:theme="@style/Theme.Design.NoActionBar">
+            </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".CreditActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
