@@ -3,27 +3,36 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorPrimaryDark"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
 
     <TextView
         android:id="@+id/collaborators"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title"
         android:fontFamily="@font/archivo_narrow"
         android:text="Cassinari Alessandro, Londero Andrea, Manessi Claudia,   Negri Matteo, Pettenella Luca "
         android:textColor="#FFFFFF"
-        android:textSize="16dp" />
+        android:textSize="14dp" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/collaborators"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         android:text="REALISED BY"
-        android:textSize="20dp"
+        android:textSize="16dp"
         android:textColor="#FFFFFF"
         />
 
@@ -31,10 +40,11 @@
         android:id="@+id/title2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="20dp"
+        android:paddingTop="5dp"
         android:layout_below="@id/collaborators"
         android:layout_centerHorizontal="true"
         android:text="COLLABORATORS"
+        android:textSize="16dp"
         android:textColor="#FFFFFF"
         />
 
@@ -45,8 +55,10 @@
         android:layout_below="@id/title2"
         android:layout_centerHorizontal="true"
         android:text="Antonio Lezzi"
-        android:textSize="16dp"
+        android:textSize="14dp"
         android:textColor="#FFFFFF"
         />
+
+    </RelativeLayout>
 
 </RelativeLayout>
