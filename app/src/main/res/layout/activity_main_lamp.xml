@@ -17,13 +17,13 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="220dp"
         android:layout_weight="50">
 
         <ImageView
             android:id="@+id/pianta"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="220dp"
             android:scaleType="fitXY"
             android:src="@drawable/pianta" />
 
@@ -60,9 +60,10 @@
             android:clickable="true"
             android:onClick="ToLamp3"
             android:layout_marginTop="55dp"
-            android:layout_marginStart="200dp"
-            android:scaleX="0.5"
+            android:layout_marginStart="190dp"
+            android:scaleX="0.7"
             android:scaleY="0.5"
+            android:scaleType="fitXY"
             android:background="@color/colorPrimaryDark"
             android:src="@drawable/icon_lamp" />
 
@@ -83,7 +84,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="220dp"
             android:layout_weight="50">
 
             <FrameLayout
@@ -99,11 +100,11 @@
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_below="@id/colonne"
         android:background="@color/colorPrimary"
         app:itemTextColor="#FFFFFF"
-        app:itemIconSize="15dp"
+        app:itemIconSize="20dp"
         app:itemIconTint="@android:color/tab_indicator_text"
         app:menu="@menu/menu_navigation" />
 

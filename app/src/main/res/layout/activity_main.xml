@@ -48,7 +48,7 @@
             android:clickable="true"
             android:onClick="ToWindow"
             android:padding="10dp"
-            android:src="@drawable/window_button" />
+            android:src="@drawable/window" />
 
         <ImageButton
             android:id="@+id/fan"

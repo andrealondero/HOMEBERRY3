@@ -8,10 +8,23 @@
     android:background="@color/colorPrimaryDark"
     tools:context=".MainWindowActivity">
 
+    <LinearLayout
+        android:id="@+id/colonne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_weight="50">
+
     <ImageView
         android:id="@+id/pianta"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
         android:src="@drawable/pianta"
         />
 
@@ -19,49 +32,37 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="175dp"
+        android:layout_centerInParent="true"
         android:background="@color/colorPrimaryDark"
         android:clickable="true"
         android:onClick="ToWindow1"
-        android:padding="10dp"
-        android:scaleX="0.8"
-        android:scaleY="0.8"
-        android:src="@drawable/icon_window" />
+        android:src="@drawable/window" />
 
-    <ImageButton
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="130dp"
-        android:layout_marginEnd="80dp"
-        android:background="@color/colorPrimaryDark"
-        android:clickable="true"
-        android:onClick="ToWindow2"
-        android:padding="10dp"
-        android:scaleX="0.8"
-        android:scaleY="0.8"
-        android:src="@drawable/icon_window" />
+        </RelativeLayout>
 
-    <FrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/pianta"
-        android:layout_above="@id/navigation">
-    </FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_weight="50">
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/colonne"
         android:background="@color/colorPrimary"
         app:itemTextColor="#FFFFFF"
-        app:itemIconSize="30dp"
+        app:itemIconSize="20dp"
         app:itemIconTint="@android:color/tab_indicator_text"
         app:menu="@menu/menu_navigation_window" />
 

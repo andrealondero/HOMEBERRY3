@@ -17,7 +17,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="220dp"
             android:layout_weight="50">
 
             <ImageView
@@ -45,7 +45,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="220dp"
             android:layout_weight="50">
 
             <FrameLayout
@@ -62,12 +62,12 @@
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation_fan"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_below="@id/colonne"
         android:background="@color/colorPrimary"
         app:itemTextColor="#FFFFFF"
-        app:itemIconSize="15dp"
-        app:itemIconTint="@android:color/tab_indicator_text"
+        app:itemIconSize="20dp"
+        app:itemIconTint="#FFFFFF"
         app:menu="@menu/menu_navigation_fan" />
 
 </RelativeLayout>

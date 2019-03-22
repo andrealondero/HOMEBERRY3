@@ -56,11 +56,6 @@ public class MainWindowActivity extends AppCompatActivity {
 
     public void ToWindow1(View view) {
         getSupportFragmentManager().beginTransaction().replace( R.id.fragment_container,
-                new FragmentWindow1()).commit();
-    }
-
-    public void ToWindow2(View view) {
-        getSupportFragmentManager().beginTransaction().replace( R.id.fragment_container,
-                new FragmentWindow2()).commit();
+                new FragmentWindow()).commit();
     }
 }
